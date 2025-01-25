@@ -7,7 +7,8 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGoogle } from '@fortawesome/free-brands-svg-icons';
-import darsanalogin from '@/assets/darsanalogin.jpg';
+
+// import darsanalogin from '@/assets/darsanalogin.jpg';
 
 const LoginPage = () => {
   const router = useRouter();
@@ -65,13 +66,9 @@ const LoginPage = () => {
             </p>
           </div>
           <div className="hidden lg:block lg:w-1/2 lg:pl-8">
-            <Image
-              src={darsanalogin}
-              alt="Loginimage"
-              width={900}
-              height={100}
-              className="w-full h-auto object-cover rounded-lg"
-            />
+            <div className="w-full h-64 bg-gray-200 rounded-lg flex items-center justify-center">
+              <span className="text-gray-500">Image Placeholder</span>
+            </div>
           </div>
         </div>
       </div>
